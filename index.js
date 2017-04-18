@@ -65,7 +65,7 @@
             mark.push(info);  
         }
 
-        mark = time(mark);
+        time(mark);
         emptyContent(mark);
         return mark;
     }
@@ -157,8 +157,6 @@
             hour = y.join(':');
             mark[i].time = year + '-' + month + '-' + day + ' ' + hour;   
         }
-
-        return mark;
     }
 
     //清除重复的书名
@@ -197,8 +195,6 @@
                 mark.pop();
             } 
         }
-
-        return mark;
     }
 
     //获取书单
